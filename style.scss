@@ -437,4 +437,200 @@ img {
 
 html {
   font-size: 62.5%;
+  font-family: "Myriad Pro"
+}
+
+//header
+
+.header{
+  &__inr{
+    width: 100%;
+    margin-top: 25px;
+
+    .header__icon{
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 30px 30px 0;
+      a{
+        margin-left: 23px;
+      }
+      a:hover{
+        opacity: 0.7;
+      }
+      a:first-child{
+        margin: 0;
+      }
+    }
+
+    .header__h1{
+      text-align: center;
+      margin-bottom: 50px;
+      a:hover{
+        opacity: 0.7;
+      }
+    }
+
+    .header__menu{
+      margin-bottom: 100px;
+      ul{
+        display: flex;
+        justify-content: center;
+        li{
+          margin-left: 45px;
+          a{
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 0.15rem;
+          }
+          a:hover{
+            opacity: 0.7;
+          }
+        }
+        li:first-child{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+//maincontent
+
+.content{
+  width: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+    padding: 67px 0 115px 0;
+    position: relative;
+  .maincontent{
+    &__block{
+      display: flex;
+      margin-left: 100px;
+      margin-bottom: 28px;
+      .content__image{
+        position: relative;
+      }
+  
+      .content__image::before:last-child{
+        content: none;
+      }
+      .content__text{
+        padding: 25px;
+        background-color: #fff;
+        &-top{
+          margin-bottom: 25px;
+          display: flex;
+          justify-content: space-between;
+          .titme{
+            color: #645b5b;
+            font-size: 1.6rem;
+            a:hover{
+              opacity: 0.7;
+            }
+            a:before{
+              content: '';
+              background-image: url(../image/icon-time.png);
+              width: 14px;
+              height: 14px;
+              display: inline-block;
+              background-repeat: no-repeat;
+              margin-right: 6px;
+              vertical-align: baseline;
+            }
+          }
+          .category{
+            width: 70px;
+            height: 26px;
+            color: #fff;
+            background-color: #bfa34c;
+            font-size: 1.4rem;
+            position: relative;
+            a{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            a:hover{
+              opacity: 0.7
+            }
+          }
+        }
+        &-bottom{
+          max-width: 285px;
+          overflow: hidden;
+          a{
+            p{
+              font-size: 2.2rem;
+              font-family: '游ゴシック体';
+            }
+          }
+          a:hover{
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  .sidecontent{
+
+    &__image{
+      margin-bottom: 26px;
+    }
+
+    &__category{
+      .category__list{
+        font-size: 1.6rem;
+        display: block;
+        text-align: center;
+        width: 300px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #bfa34c;
+        color: #fff;
+      }
+
+      .category__menu{
+        ul{
+          li{
+            font-size: 1.5rem;
+            width: 300px;
+            height: 55px;
+            border: solid 1px #f3f3f3;
+            background-color: #fff;
+            position: relative;
+            a{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              padding-left: 26px;
+            }
+            a:hover{
+              opacity: 0.7;
+            }
+          }
+          .bordar-bottom-none{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  .top{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
 }

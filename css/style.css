@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -411,5 +412,241 @@ img {
 
 html {
   font-size: 62.5%;
+  font-family: "Myriad Pro";
+}
+
+.header__inr {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.header__inr .header__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 30px 30px 0;
+}
+
+.header__inr .header__icon a {
+  margin-left: 23px;
+}
+
+.header__inr .header__icon a:hover {
+  opacity: 0.7;
+}
+
+.header__inr .header__icon a:first-child {
+  margin: 0;
+}
+
+.header__inr .header__h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header__inr .header__h1 a:hover {
+  opacity: 0.7;
+}
+
+.header__inr .header__menu {
+  margin-bottom: 100px;
+}
+
+.header__inr .header__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__inr .header__menu ul li {
+  margin-left: 45px;
+}
+
+.header__inr .header__menu ul li a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+}
+
+.header__inr .header__menu ul li a:hover {
+  opacity: 0.7;
+}
+
+.header__inr .header__menu ul li:first-child {
+  margin: 0;
+}
+
+.content {
+  width: 100%;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 67px 0 115px 0;
+  position: relative;
+}
+
+.content .maincontent__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 100px;
+  margin-bottom: 28px;
+}
+
+.content .maincontent__block .content__image {
+  position: relative;
+}
+
+.content .maincontent__block .content__image::before:last-child {
+  content: none;
+}
+
+.content .maincontent__block .content__text {
+  padding: 25px;
+  background-color: #fff;
+}
+
+.content .maincontent__block .content__text-top {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .maincontent__block .content__text-top .titme {
+  color: #645b5b;
+  font-size: 1.6rem;
+}
+
+.content .maincontent__block .content__text-top .titme a:hover {
+  opacity: 0.7;
+}
+
+.content .maincontent__block .content__text-top .titme a:before {
+  content: '';
+  background-image: url(../image/icon-time.png);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 6px;
+  vertical-align: baseline;
+}
+
+.content .maincontent__block .content__text-top .category {
+  width: 70px;
+  height: 26px;
+  color: #fff;
+  background-color: #bfa34c;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.content .maincontent__block .content__text-top .category a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .maincontent__block .content__text-top .category a:hover {
+  opacity: 0.7;
+}
+
+.content .maincontent__block .content__text-bottom {
+  max-width: 285px;
+  overflow: hidden;
+}
+
+.content .maincontent__block .content__text-bottom a p {
+  font-size: 2.2rem;
+  font-family: '游ゴシック体';
+}
+
+.content .maincontent__block .content__text-bottom a:hover {
+  opacity: 0.7;
+}
+
+.content .sidecontent__image {
+  margin-bottom: 26px;
+}
+
+.content .sidecontent__category .category__list {
+  font-size: 1.6rem;
+  display: block;
+  text-align: center;
+  width: 300px;
+  height: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #bfa34c;
+  color: #fff;
+}
+
+.content .sidecontent__category .category__menu ul li {
+  font-size: 1.5rem;
+  width: 300px;
+  height: 55px;
+  border: solid 1px #f3f3f3;
+  background-color: #fff;
+  position: relative;
+}
+
+.content .sidecontent__category .category__menu ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 26px;
+}
+
+.content .sidecontent__category .category__menu ul li a:hover {
+  opacity: 0.7;
+}
+
+.content .sidecontent__category .category__menu ul .bordar-bottom-none {
+  border-bottom: none;
+}
+
+.content .top {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
 }
 /*# sourceMappingURL=style.css.map */
