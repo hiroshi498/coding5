@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <title>kadai5</title>
 </head>
 <body>
@@ -21,6 +24,8 @@
 
       <div class="header__h1"><a href=""><img src="image/header-logo.png" alt=""></a></div>
 
+      <div class="header__h1-sp"><a href=""><img src="image/header-logo.png" alt=""></a></div>
+
       <div class="header__menu">
         <ul>
           <li><a href="">WEB</a></li>
@@ -33,12 +38,51 @@
         </ul>
       </div>
 
+
+    <div id="toggle">
+      <div id="toggle-box">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
     </div>
+
+    <div id="nav-content">
+      <nav>
+          <ul>
+              <li><a href="">WEB</a></li>
+              <li><a href="">LIFE</a></li>
+              <li><a href="">キャリア</a></li>
+              <li><a href="">旅</a></li>
+              <li><a href="">マーケティング</a></li>
+              <li><a href="">DevRel</a></li>
+              <li><a href="">英語</a></li>
+            </ul>
+      </nav>
+    </div>
+
+
+
+    </div>
+
   </header>
 
-<div class="content">
+  <!-- mainvisual -->
 
-  <div class="maincontent">
+  <div class="mainvisual">
+    <div class="your-class">
+      <div><img src="image/mainvisual.png" alt=""></div>
+      <div><img src="image/mainvisual.png" alt=""></div>
+      <div><img src="image/mainvisual.png" alt=""></div>
+    </div>
+  </div>
+
+
+  <!-- content -->
+
+<div class="content">
+  <div class="content__inr">
+    <div class="maincontent">
 
       <div class="maincontent__block new-item">
   
@@ -90,9 +134,7 @@
         </div>
   
       </div>
-  
-  
-    </div>
+  </div>
 
   <div class="sidecontent">
 
@@ -118,12 +160,47 @@
   </div>
 
   <div class="top"><a href="#"><img src="image/top.png" alt=""></a></div>
+  </div>
 
 </div>
+
+<footer>
+  <div class="footer__inr">
+
+    <div class="footer__company">
+      <div class="footer__company-logo"><a href=""><img src="image/footer-logo.png" alt=""></a></div>
+      <div class="footer__company-address">
+        株式会社LIG TEL : 03-6240-1253
+        <span>〒110-0015 東京都台東区東上野2-18-7 共同ビル 10F</span>
+      </div>
+    </div>
+
+    <div class="footer-border"></div>
+    
+    <div class="footer__guide">
+      <div class="privacypolicy delimiter"><a href="">プライバシーポリシー</a></div>
+      <div class="mediaz delimiter"><a href="">メディア・広告掲載について</a></div>
+      <div class="sitemap"><a href="">サイトマップ</a></div>
+    </div>
+
+    <div class="copyright">© 2006-2015 LIG INC.</div>
+  </div>
+</footer>
  
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script type="text/javascript" src="javascript/style.js"></script>
-  
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $('.your-class').slick({
+
+  });
+});
+</script>
 </body>
 </html>
